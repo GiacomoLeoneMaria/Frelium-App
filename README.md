@@ -82,11 +82,12 @@ Frelium is a mobile application built for people always on the move: backpackers
 - **Categorie**: Lavoro dipendente, Freelance, Consulenza, Casa, Cibo, Trasporti e altro
 - **Collega un Cliente**: Associa un cliente alle transazioni di entrata
 - **Ore e Tariffa Oraria**: Inserisci ore lavorate e tariffa — l'importo viene calcolato automaticamente
+- **Multi-Valuta**: Registra una transazione in una valuta diversa da quella di riferimento — l'importo originale non viene mai alterato, solo convertito automaticamente in visualizzazione (vedi [Multi-Valuta e Conversione](#multi-valuta-e-conversione--multi-currency--conversion))
 - **Calendario Personalizzato**: Selezione della data con calendario integrato
 - **Note**: Campo libero per annotazioni aggiuntive
 - **Ricerca Full-Text**: Cerca per categoria o note
 - **Filtri per Tipo**: Tutte / Entrate / Uscite
-- **Totali in Tempo Reale**: Riepilogo aggiornato per i risultati filtrati
+- **Totali in Tempo Reale**: Riepilogo aggiornato per i risultati filtrati, convertito nella valuta di riferimento
 - **Elimina con Long-Press**: Premi a lungo su una transazione per eliminarla
 
 **🇬🇧 English:**
@@ -94,11 +95,12 @@ Frelium is a mobile application built for people always on the move: backpackers
 - **Categories**: Employment, Freelance, Consulting, Housing, Food, Transport, and more
 - **Attach a Client**: Link a client to income transactions
 - **Hours & Hourly Rate**: Log hours worked and rate — amount is auto-calculated
+- **Multi-Currency**: Log a transaction in a currency different from your home currency — the original amount is never altered, only converted automatically for display (see [Multi-Currency & Conversion](#multi-valuta-e-conversione--multi-currency--conversion))
 - **Custom Calendar**: Date selection with built-in calendar picker
 - **Notes**: Free-text field for additional annotations
 - **Full-Text Search**: Search by category or notes
 - **Type Filters**: All / Income / Expense
-- **Running Totals**: Live summary for filtered results
+- **Running Totals**: Live summary for filtered results, converted to the home currency
 - **Long-Press to Delete**: Press and hold a transaction to delete it
 
 ---
@@ -132,6 +134,7 @@ Frelium is a mobile application built for people always on the move: backpackers
 - **Stato Fattura**: Bozza / Inviata / Pagata, con filtri dedicati nell'elenco
 - **Anteprima e PDF**: Anteprima della fattura prima di condividerla, generazione PDF e condivisione tramite il pannello nativo di condivisione
 - **Segna come Inviata/Pagata**: Aggiorna lo stato direttamente dopo la condivisione o dalla fattura stessa
+- **Elimina con Long-Press**: Premi a lungo su una fattura per eliminarla
 - **Profilo Mittente**: Impostazioni dedicate per i tuoi dati (nome, logo, indirizzo, identificativi fiscali, coordinate bancarie) con etichette dei campi personalizzabili in base al paese
 - **Promemoria Dati Mancanti**: Banner che segnala i campi obbligatori del profilo mittente non ancora compilati
 
@@ -144,6 +147,7 @@ Frelium is a mobile application built for people always on the move: backpackers
 - **Invoice Status**: Draft / Sent / Paid, with dedicated filters in the list
 - **Preview and PDF**: Preview the invoice before sharing, generate a PDF, and share it via the native share sheet
 - **Mark as Sent/Paid**: Update status right after sharing or from the invoice itself
+- **Long-Press to Delete**: Press and hold an invoice to delete it
 - **Sender Profile**: Dedicated settings for your details (name, logo, address, tax identifiers, bank details) with field labels customizable per country
 - **Missing Details Reminder**: Banner flagging required sender profile fields that haven't been filled in yet
 
@@ -175,15 +179,37 @@ Frelium is a mobile application built for people always on the move: backpackers
 - **Esporta Dati**: Esporta tutti i dati in un file JSON di backup
 - **Importa Dati**: Ripristina da un backup JSON (sostituisce i dati correnti)
 - **Cancella Tutto**: Reset completo con richiesta di conferma
-- **Selettore Valuta**: Oltre 20 valute (EUR, USD, GBP, CHF, JPY e altre)
+- **Selettore Valuta**: Oltre 20 valute (EUR, USD, GBP, CHF, JPY e altre) come valuta di riferimento dell'app
+- **Convertitore Integrato**: Nella stessa schermata, inserisci un importo e vedi la conversione live in tutte le altre valute
 - **Target Mensile**: Imposta l'obiettivo di entrate e il limite massimo di spese
 
 **🇬🇧 English:**
 - **Export Data**: Export all data to a JSON backup file
 - **Import Data**: Restore from a JSON backup (replaces current data)
 - **Clear All**: Full reset with confirmation prompt
-- **Currency Selector**: 20+ currencies (EUR, USD, GBP, CHF, JPY, and more)
+- **Currency Selector**: 20+ currencies (EUR, USD, GBP, CHF, JPY, and more) as the app's home currency
+- **Built-in Converter**: On the same screen, type an amount and see it converted live into every other currency
 - **Monthly Target**: Set the income goal and maximum expense budget
+
+---
+
+### Multi-Valuta e Conversione / Multi-Currency & Conversion
+
+**🇮🇹 Italiano:**
+- **Valuta per Transazione**: Ogni transazione può essere registrata nella sua valuta originale, diversa dalla valuta di riferimento dell'app
+- **Nessun Dato Alterato**: L'importo salvato è sempre quello inserito, nella valuta scelta — non viene mai riscritto o "congelato" a un tasso di cambio
+- **Conversione Live**: Ovunque nell'app (dashboard, transazioni, report, calendario, clienti, fatture) gli importi vengono convertiti nella valuta di riferimento al momento della visualizzazione, con il tasso di cambio più recente disponibile
+- **Cambio Valuta di Riferimento Istantaneo**: Cambiare la valuta di riferimento nelle Impostazioni ricalcola subito tutti i totali, senza bisogno di modificare i dati salvati
+- **Dettaglio per Valuta**: Il saldo mensile in dashboard mostra, quando applicabile, il dettaglio delle valute originali che compongono il totale convertito
+- **Tassi di Cambio**: Forniti da [Frankfurter](https://frankfurter.dev) (dati della Banca Centrale Europea), senza chiave API, con cache giornaliera locale per funzionare anche offline con l'ultimo tasso disponibile
+
+**🇬🇧 English:**
+- **Per-Transaction Currency**: Any transaction can be logged in its original currency, different from the app's home currency
+- **Nothing Ever Altered**: The stored amount is always exactly what was entered, in the currency it was entered in — never rewritten or "frozen" to an exchange rate
+- **Live Conversion**: Everywhere in the app (dashboard, transactions, reports, calendar, clients, invoices) amounts are converted to the home currency at display time, using the latest available exchange rate
+- **Instant Home Currency Switch**: Changing the home currency in Settings recalculates every total immediately, with no need to touch stored data
+- **Per-Currency Breakdown**: The dashboard's monthly balance shows, when relevant, the breakdown of original currencies that make up the converted total
+- **Exchange Rates**: Provided by [Frankfurter](https://frankfurter.dev) (European Central Bank data), no API key required, with a daily local cache so conversion still works offline using the last known rate
 
 ---
 
@@ -240,11 +266,21 @@ Frelium is a mobile application built for people always on the move: backpackers
 
 **🇮🇹 Italiano:**
 - **`expo-sqlite`**: Database SQLite locale per la persistenza strutturata dei dati
-- **`@react-native-async-storage/async-storage`**: Per le preferenze utente (valuta, impostazioni)
+- **`@react-native-async-storage/async-storage`**: Per le preferenze utente (valuta, impostazioni) e la cache giornaliera dei tassi di cambio
 
 **🇬🇧 English:**
 - **`expo-sqlite`**: Local SQLite database for structured data persistence
-- **`@react-native-async-storage/async-storage`**: For user preferences (currency, settings)
+- **`@react-native-async-storage/async-storage`**: For user preferences (currency, settings) and the daily exchange rate cache
+
+---
+
+### Servizi Esterni / External Services
+
+**🇮🇹 Italiano:**
+- **[Frankfurter API](https://frankfurter.dev)**: Unico servizio esterno usato dall'app — fornisce i tassi di cambio (dati BCE) per la conversione multi-valuta. Nessuna chiave API, nessun dato personale trasmesso oltre alla richiesta HTTP anonima; risultato cachato localmente ogni 24 ore
+
+**🇬🇧 English:**
+- **[Frankfurter API](https://frankfurter.dev)**: The only external service the app uses — provides exchange rates (ECB data) for multi-currency conversion. No API key, no personal data sent beyond the anonymous HTTP request; result cached locally every 24 hours
 
 ---
 
@@ -271,11 +307,13 @@ Frelium is a mobile application built for people always on the move: backpackers
 **🇮🇹 Italiano:**
 - 🔜 **Android**: Pubblicazione su Google Play
 - 🔜 **Tema Dark**: Supporto alla modalità scura
+- 🔜 **Grafici Avanzati**: Visualizzazioni temporali e trend mensili
 - 🔜 **Widget**: Widget per la schermata home con il saldo del giorno
 
 **🇬🇧 English:**
 - 🔜 **Android**: Google Play release
 - 🔜 **Dark Theme**: Dark mode support
+- 🔜 **Advanced Charts**: Time-series visualizations and monthly trends
 - 🔜 **Widget**: Home screen widget with daily balance
 
 ---
