@@ -3,6 +3,10 @@
 </p>
 
 <p align="center">
+  <a href="https://www.frelium.travel">https://www.frelium.travel</a>
+</p>
+
+<p align="center">
   <strong>Your travel budget companion. Track spending on the go — backpackers, holiday-makers, casual workers welcome.</strong><br/>
 </p>
 
@@ -12,7 +16,7 @@
 
 | Platform | Status |
 |----------|--------|
-| **iOS (iPhone / iPad)** | Available on the App Store |
+| **iOS (iPhone / iPad)** | [Available on the App Store](https://apps.apple.com/it/app/frelium/id6760442250?l=en-GB) |
 | **Android** | Coming Soon |
 
 ---
