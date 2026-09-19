@@ -1,6 +1,6 @@
-# Terms and Conditions — Frelium
+# Terms and Conditions Frelium
 
-**Last updated:** March 11, 2026
+**Last updated:** September 19, 2026
 
 ---
 
@@ -8,13 +8,15 @@
 
 By downloading, installing, or using Frelium ("the App"), you agree to be bound by these Terms and Conditions ("Terms"). If you do not agree to these Terms, do not use the App.
 
-These Terms constitute a legally binding agreement between you ("User", "you") and Giacomo Cavallini ("Developer", "we", "I"), an individual developer based in Italy.
+These Terms constitute a legally binding agreement between you ("User", "you") and Giacomo Cavallini ("Developer", "we", "I"), an individual developer based in Italy. These Terms are intended to apply to users worldwide; Section 14 explains how local mandatory consumer-protection law interacts with them.
+
+**These Terms describe the App as it currently works and is currently priced.** Both may change — see Section 5 and Section 13.
 
 ---
 
 ## 2. Description of the App
 
-Frelium is a personal finance management mobile application designed to help individuals — including travelers, backpackers, and casual or part-time workers — track income, expenses, clients, and budgets. The App stores all data exclusively on the user's device and does not require an internet connection or account registration.
+Frelium is a personal finance and invoicing application designed to help individuals — including freelancers, travelers, and casual or part-time workers — track income, expenses, clients, budgets, and generate invoices. The current version of the App stores all data exclusively on the user's device and does not require an internet connection or account registration to use its core features.
 
 ---
 
@@ -22,7 +24,7 @@ Frelium is a personal finance management mobile application designed to help ind
 
 ### 3.1 Grant of License
 
-Subject to your compliance with these Terms, the Developer grants you a limited, non-exclusive, non-transferable, revocable license to download and use the App on devices you own or control, solely for your personal, non-commercial purposes.
+Subject to your compliance with these Terms, the Developer grants you a limited, non-exclusive, non-transferable, revocable license to download and use the App on devices you own or control, solely for your personal or business use in connection with your own finances and clients.
 
 ### 3.2 Restrictions
 
@@ -32,8 +34,8 @@ You may not:
 - Reverse engineer, decompile, disassemble, or attempt to derive the source code of the App
 - Remove, alter, or obscure any proprietary notices (including copyright notices) on the App
 - Use the App for any unlawful purpose or in violation of any applicable laws or regulations
-- Sublicense, sell, resell, transfer, or otherwise exploit the App for commercial purposes without prior written consent from the Developer
-- Use the App to store or process data in ways that violate the rights of others
+- Sublicense, sell, resell, transfer, or otherwise exploit the App itself for commercial purposes without prior written consent from the Developer
+- Attempt to circumvent any paid-feature restriction, usage limit, or license check the App may implement now or in the future
 
 ### 3.3 Open Source Components
 
@@ -53,26 +55,38 @@ If you download the App from the Google Play Store, you acknowledge that these T
 
 ---
 
-## 5. In-App Purchases
+## 5. Pricing, In-App Purchases, and Feature Changes
 
 ### 5.1 Current Status
 
 As of the date of these Terms, Frelium is free to use and does not offer in-app purchases.
 
-### 5.2 Future Purchases
+### 5.2 The App's Pricing and Feature Set May Change
 
-The Developer reserves the right to introduce paid features, subscriptions, or one-time purchases in the future. Any such purchases will:
+**This is not a promise that any specific feature will remain free, or free of restrictions, forever.** The Developer reserves the right to, at any time and at its sole discretion:
+
+- Introduce paid features, subscriptions, one-time purchases, or usage-based pricing
+- Move a feature that is currently free behind a paywall, subscription, or usage limit (for example, a limit on the number of invoices, clients, or transactions available on a free tier)
+- Introduce a free tier alongside paid tiers with different capabilities
+- Introduce advertising or sponsored content
+- Discontinue or modify any feature, including features you currently use for free
+
+Where reasonably practicable, the Developer will give existing users advance notice of changes that materially restrict functionality they are actively using, and will comply with any minimum-notice requirements imposed by applicable consumer-protection law. Data you have already created in the App (transactions, clients, invoices, etc.) will remain accessible to you and exportable even if the feature that created it becomes a paid feature going forward, except where continued access is technically dependent on the restricted feature itself.
+
+### 5.3 How Purchases Work
+
+Any current or future purchase will:
 
 - Be clearly labeled and priced before purchase
 - Be processed exclusively through Apple App Store or Google Play billing systems
 - Be subject to the refund policies of the respective platform
-- Be accompanied by an updated version of these Terms
+- Be accompanied by an updated version of these Terms if the change is material
 
-The Developer does not directly process or store any payment information.
+The Developer does not directly process or store any payment card information.
 
-### 5.3 Refunds
+### 5.4 Refunds
 
-All purchase refund requests are handled by the respective platform (Apple or Google) according to their policies. The Developer cannot issue refunds directly.
+All purchase refund requests are handled by the respective platform (Apple or Google) according to their policies. The Developer cannot issue refunds directly. This does not affect any statutory right to a refund or withdrawal you may have under the mandatory consumer-protection law of your country of residence (for example, the 14-day right of withdrawal for EU/EEA consumers under Directive 2011/83/EU, subject to its exceptions for digital content).
 
 ---
 
@@ -80,27 +94,28 @@ All purchase refund requests are handled by the respective platform (Apple or Go
 
 ### 6.1 Your Data
 
-All data you enter into the App (transactions, clients, budgets, settings, photos) belongs to you. The Developer claims no rights over your personal data.
+All data you enter into the App (transactions, clients, budgets, invoices, settings, photos) belongs to you. The Developer claims no ownership rights over your personal or business data.
 
 ### 6.2 Data Storage
 
-All data is stored locally on your device. The Developer has no access to your data and cannot recover it if it is lost (e.g., due to device reset, uninstallation, or device loss). You are solely responsible for maintaining backups of your data using the App's export feature.
+As of the current version, all data is stored locally on your device. The Developer has no access to your data and cannot recover it if it is lost (e.g., due to device reset, uninstallation, or device loss). You are solely responsible for maintaining backups of your data using the App's export feature. If a future version of the App introduces optional cloud backup or sync, this section and the Privacy Policy will be updated to describe how that works before it becomes available.
 
-### 6.3 No Data Transmission
+### 6.3 Data Transmission
 
-The App does not transmit your data to any server or third party. See the [Privacy Policy](./privacy-policy.md) for full details.
+The current version of the App does not transmit your data to any server or third party. See the [Privacy Policy](/privacy) for full details and for how this could change in the future.
 
 ---
 
-## 7. Accuracy of Financial Data
+## 7. Accuracy of Financial Data and Invoices
 
-Frelium is a personal finance tracking tool. The App does not provide financial, tax, accounting, or investment advice. All calculations and reports are based solely on the data you input. You are solely responsible for:
+Frelium is a personal finance and invoicing tool. It does not provide financial, tax, legal, accounting, or investment advice, and invoices generated by the App are not reviewed for compliance with the tax law of any specific jurisdiction. All calculations, reports, and generated documents are based solely on the data you input and the settings you choose. You are solely responsible for:
 
-- The accuracy of the data you enter
-- Any financial decisions made based on the App's output
+- The accuracy and completeness of the data you enter, including invoice and tax details
+- Ensuring any invoice you generate complies with the tax and business-registration requirements applicable to you
+- Any financial or business decisions made based on the App's output
 - Compliance with applicable tax laws and financial regulations in your country
 
-The Developer is not liable for any financial loss or decisions made based on the App's data or reports.
+The Developer is not liable for any financial loss, tax penalty, or business decision arising from the App's data, calculations, or generated documents.
 
 ---
 
@@ -120,6 +135,9 @@ To the maximum extent permitted by applicable law, the Developer disclaims all w
 - That the App will be uninterrupted, error-free, or free of viruses or other harmful components
 - That any defects or errors will be corrected
 - That the App will meet your requirements or expectations
+- That any particular feature, pricing, or data-storage model will remain unchanged (see Section 5 and Section 13)
+
+Nothing in this section limits any warranty or guarantee that cannot be excluded under the mandatory consumer-protection law of your country of residence.
 
 ---
 
@@ -129,12 +147,12 @@ To the maximum extent permitted by applicable law, the Developer shall not be li
 
 - Indirect, incidental, special, consequential, or punitive damages
 - Loss of profits, revenue, data, or business opportunities
-- Data loss or corruption (including loss of financial records stored in the App)
-- Damages arising from your reliance on the App's output for financial decisions
+- Data loss or corruption (including loss of financial records or invoices stored in the App)
+- Damages arising from your reliance on the App's output for financial, tax, or business decisions
 
 This limitation applies regardless of the legal theory under which damages are sought, and even if the Developer has been advised of the possibility of such damages.
 
-In jurisdictions that do not allow the exclusion or limitation of liability for certain types of damages, the Developer's liability will be limited to the maximum extent permitted by law.
+In jurisdictions that do not allow the exclusion or limitation of liability for certain types of damages (including for consumers under mandatory local law), the Developer's liability will be limited to the maximum extent permitted by law.
 
 ---
 
@@ -146,6 +164,8 @@ You agree to indemnify, defend, and hold harmless the Developer from and against
 - Your violation of these Terms
 - Your violation of any applicable laws or third-party rights
 
+This section does not apply to the extent it would be unenforceable against a consumer under mandatory local law.
+
 ---
 
 ## 12. Termination
@@ -156,7 +176,7 @@ You may stop using the App at any time by uninstalling it from your device. Unin
 
 ### 12.2 By the Developer
 
-The Developer reserves the right to discontinue the App or any part of it at any time, with or without notice. In such an event, your license to use the App will automatically terminate.
+The Developer reserves the right to discontinue the App or any part of it at any time, with or without notice, subject to Section 5.2. In such an event, your license to use the App will automatically terminate.
 
 ### 12.3 Effect of Termination
 
@@ -164,25 +184,27 @@ Upon termination, all rights granted to you under these Terms will immediately c
 
 ---
 
-## 13. Changes to the App and Terms
+## 13. Changes to the App and These Terms
 
-### 13.1 App Changes
+### 13.1 App and Pricing Changes
 
-The Developer reserves the right to modify, suspend, or discontinue any feature of the App at any time, including the introduction of paid features, without liability to you.
+The Developer reserves the right to modify, restrict, monetize, suspend, or discontinue any feature of the App at any time, including converting a currently free feature into a paid or restricted one, as described in Section 5.
 
-### 13.2 Changes to Terms
+### 13.2 Changes to These Terms
 
-We may update these Terms at any time. When we do, we will update the "Last updated" date. For material changes, we will provide notice via an in-app notification or App Store update notes. Continued use of the App after changes take effect constitutes your acceptance of the updated Terms.
+We may update these Terms at any time, including to reflect new features, new pricing, or changes in applicable law. When we do, we will update the "Last updated" date. For material changes, we will provide notice via an in-app notification or App Store/Google Play update notes. Continued use of the App after changes take effect constitutes your acceptance of the updated Terms, except where applicable law requires your affirmative consent instead.
 
-The current version of these Terms will always be available at the GitHub repository linked in the App Store listing.
+The current version of these Terms will always be available at the GitHub repository linked in the App Store listing, and at this page.
 
 ---
 
-## 14. Governing Law and Jurisdiction
+## 14. Governing Law, Jurisdiction, and Your Local Rights
 
-These Terms are governed by and construed in accordance with the laws of **Italy**, without regard to its conflict of law provisions.
+These Terms are governed by and construed in accordance with the laws of **Italy**, without regard to its conflict of law provisions, to the extent permitted by applicable law.
 
-Any disputes arising under or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts of Italy. If you are a consumer resident in the EU/EEA, you may also benefit from the mandatory consumer protection provisions of your country of residence.
+Any disputes arising under or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts of Italy, except where mandatory consumer-protection law gives you the right to bring proceedings in the courts of your own country of residence instead — in which case that right is unaffected by this section.
+
+**If you are a consumer**, nothing in these Terms limits any right that cannot be waived or limited under the mandatory law of your country of residence, including (where applicable) rights under EU/EEA and UK consumer law, the Australian Consumer Law, or equivalent protections in the United States, Canada, or Brazil. Where a provision of these Terms conflicts with such mandatory rights, the mandatory right prevails.
 
 **EU Online Dispute Resolution:** The European Commission provides an online dispute resolution platform accessible at [https://ec.europa.eu/consumers/odr](https://ec.europa.eu/consumers/odr).
 
@@ -192,7 +214,7 @@ Any disputes arising under or in connection with these Terms shall be subject to
 
 If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions will remain in full force and effect.
 
-These Terms, together with the [Privacy Policy](./privacy-policy.md), constitute the entire agreement between you and the Developer with respect to the App and supersede all prior agreements.
+These Terms, together with the [Privacy Policy](/privacy), constitute the entire agreement between you and the Developer with respect to the App and supersede all prior agreements.
 
 ---
 
@@ -206,4 +228,4 @@ For questions or concerns regarding these Terms, please contact:
 
 ---
 
-*These Terms and Conditions are effective as of the date listed above and apply to all versions of the Frelium application.*
+*These Terms and Conditions are effective as of the date listed above and apply to all versions of the Frelium application until superseded by a later version of this document.*
